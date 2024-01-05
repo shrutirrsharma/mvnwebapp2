@@ -11,6 +11,9 @@ jobs:
   pool:
     vmImage: 'ubuntu-latest'
 
+  strategy:
+    parallel: 1
+
   steps:
   - task: Maven@4
     inputs:
